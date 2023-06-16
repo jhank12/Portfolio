@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Josh Hankins</title>
+  </head>
+  <body>
+    <section class="landing">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a onclick="window.location.href = '#skills'">Skills</a>
+            </li>
+            <li>
+              <a onclick="window.location.href = '#projects'">Projects</a>
+            </li>
+            <li><a href="mailto:jhankins0903@gmail.com">Contact</a></li>
+            <li><a onclick="window.location.href = '#contact'">Resume</a></li>
+
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <div class="landingContent">
+          <h1>Joshua Hankins</h1>
+          <h3>Frontend Developer</h3>
+          <button class="btnMain" onclick="window.location.href = '#skills'">
+            Get Started
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <section class="skills contentSection" id="skills">
+      <h2>Skills:</h2>
+
+      <div class="skillGroups">
+        <div class="skillGroupContainer">
+          <h4>Proficient with:</h4>
+          <div class="techIconsContainer">
+            <div class="techIconContainer">
+              <i class="devicon-html5-plain colored"></i>
+              <p>HTML</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-css3-plain colored"></i>
+
+              <p>CSS</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-javascript-plain colored"></i>
+
+              <p>JavaScript</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-react-original colored"></i>
+
+              <p>React</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-sass-original colored"></i>
+
+              <p>SASS</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-figma-plain colored"></i>
+
+              <p>Figma</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skillGroupContainer">
+          <h4>Experience with:</h4>
+          <div class="techIconsContainer">
+            <div class="techIconContainer">
+              <i class="devicon-typescript-plain colored"></i>
+
+              <p>TypeScript</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-redux-original colored"></i>
+
+              <p>Redux Toolkit</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-firebase-plain colored"></i>
+
+              <p>Firebase</p>
+            </div>
+
+            <div class="techIconContainer">
+              <i class="devicon-git-plain colored"></i>
+
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects contentSection" id="projects">
+      <h2>Projects</h2>
+
+      <section class="projectsList">
+        <div class="projectCard">
+          <div class="projectImg" id="calendarImgContainer">
+            <!-- <img src="images\calendar (2).PNG" alt="" /> -->
+          </div>
+
+          <div class="projectInfo">
+            <div class="projectDescription">
+              <div>
+                <h4>Calendar</h4>
+                <p class="text-medium">
+                  Users can create an account and add custom events to the
+                  calendar. Any changes to the calendar are saved and updated in
+                  realtime with the Firestore database.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="technologiesContainer">
+                <p class="text-normal-bold">Technologies used:</p>
+
+                <p class="text-medium">React, Redux Toolkit, Firebase</p>
+              </div>
+
+              <div class="btnsContainer">
+                <a
+                  class="btnMain"
+                  href="https://calendar-jhank12.netlify.app/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  class="btnSecondary"
+                  href="https://github.com/jhank12/Calendar"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImg" id="shoppingCartImgContainer"></div>
+          <div class="projectInfo">
+            <div class="projectDescription">
+              <div>
+                <h4>Shopping Cart</h4>
+                <p class="text-medium">
+                  Fake e-commerce site with products that users can choose a
+                  quantity of and add to their cart.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="technologiesContainer">
+                <p class="text-normal-bold">Technologies used:</p>
+
+                <p class="text-medium">React, TypeScript, Redux Toolkit</p>
+              </div>
+
+              <div class="btnsContainer">
+                <a
+                  class="btnMain"
+                  href="https://jhank12-shopping-cart.netlify.app/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  class="btnSecondary"
+                  href="https://github.com/jhank12/Shopping-Cart"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImg" id="tipCalculatorImgContainer"></div>
+          <div class="projectInfo">
+            <div class="projectDescription">
+              <div>
+                <h4>Tip Calculator</h4>
+                <p class="text-medium">
+                  Allows users to input bill amount, number of people and tip
+                  percentage to divide the bill evenly.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="technologiesContainer">
+                <p class="text-normal-bold">Technologies used:</p>
+
+                <p class="text-medium">HTML, CSS, JavaScript</p>
+              </div>
+
+              <div class="btnsContainer">
+                <a
+                  class="btnMain"
+                  href="https://jhank12.github.io/Tip-Calculator/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  class="btnSecondary"
+                  href="https://github.com/jhank12/Tip-Calculator"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImg" id="pixelArtImgContainer"></div>
+          <div class="projectInfo">
+            <div class="projectDescription">
+              <div>
+                <h4>Pixel Art Editor</h4>
+                <p class="text-medium">
+                  Users can select a grid size and pick different colors to
+                  create pixel art.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardBottom">
+              <div class="technologiesContainer">
+                <p class="text-normal-bold">Technologies used:</p>
+
+                <p class="text-medium">HTML, CSS, JavaScript</p>
+              </div>
+
+              <div class="btnsContainer">
+                <a
+                  class="btnMain"
+                  href="https://jhank12.github.io/Pixel-Art-Editor/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  class="btnSecondary"
+                  href="https://github.com/jhank12/Pixel-Art-Editor"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- <section class="contentSection" id="contact">
+      <h2>Contact</h2>
+
+      <div class="techIconContainer">
+        
+        
+        <i class="devicon-github-original"></i>
+          
+          
+        <p>Github</p>
+      </div>
+
+      
+          
+      <div class="techIconContainer">
+        
+        
+        <i class="devicon-linkedin-plain colored"></i>
+
+          
+          
+        <p>LinkedIn</p>
+      </div>
+     
+
+      <div class="techIconContainer">
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+
+          
+          
+        <p>Email</p>
+      </div>
+
+      
+    </section> -->
+
+    <footer>
+      <div class="content">
+        <a target="_blank" href="https://github.com/jhank12">
+          <i class="devicon-github-original"></i>
+        </a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/joshuaahankins/">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+
+        <!-- <a target="_blank" href="https://github.com/jhank12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="currentColor"
+            class="bi bi-envelope-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+            />
+          </svg>
+        </a> -->
+      </div>
+    </footer>
+    <!-- </section> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
