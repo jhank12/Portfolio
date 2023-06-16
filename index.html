@@ -15,7 +15,50 @@
   <body>
     <section class="landing">
       <header>
-        <nav>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#ebebeb"
+          class="bi bi-list"
+          id="hamburger"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+
+        <div class="sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            id="menuClose"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+          <nav>
+            <ul>
+              <li>
+                <a onclick="window.location.href = '#skills'">Skills</a>
+              </li>
+              <li>
+                <a onclick="window.location.href = '#projects'">Projects</a>
+              </li>
+              <li><a href="mailto:jhankins0903@gmail.com">Contact</a></li>
+              <li><a onclick="window.location.href = '#contact'">Resume</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="regularNav">
           <ul>
             <li>
               <a onclick="window.location.href = '#skills'">Skills</a>
@@ -25,7 +68,6 @@
             </li>
             <li><a href="mailto:jhankins0903@gmail.com">Contact</a></li>
             <li><a onclick="window.location.href = '#contact'">Resume</a></li>
-
           </ul>
         </nav>
       </header>
@@ -33,10 +75,13 @@
       <section>
         <div class="landingContent">
           <h1>Joshua Hankins</h1>
-          <h3>Frontend Developer</h3>
-          <button class="btnMain" onclick="window.location.href = '#skills'">
-            Get Started
-          </button>
+          <div>
+            <h3>Frontend Developer</h3>
+
+            <button class="btnMain" onclick="window.location.href = '#skills'">
+              Get Started
+            </button>
+          </div>
         </div>
       </section>
     </section>
@@ -122,7 +167,6 @@
       <section class="projectsList">
         <div class="projectCard">
           <div class="projectImg" id="calendarImgContainer">
-            <!-- <img src="images\calendar (2).PNG" alt="" /> -->
           </div>
 
           <div class="projectInfo">
@@ -278,47 +322,6 @@
       </section>
     </section>
 
-
-    <!-- <section class="contentSection" id="contact">
-      <h2>Contact</h2>
-
-      <div class="techIconContainer">
-        
-        
-        <i class="devicon-github-original"></i>
-          
-          
-        <p>Github</p>
-      </div>
-
-      
-          
-      <div class="techIconContainer">
-        
-        
-        <i class="devicon-linkedin-plain colored"></i>
-
-          
-          
-        <p>LinkedIn</p>
-      </div>
-     
-
-      <div class="techIconContainer">
-        
-        
-        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-        </svg>
-
-          
-          
-        <p>Email</p>
-      </div>
-
-      
-    </section> -->
-
     <footer>
       <div class="content">
         <a target="_blank" href="https://github.com/jhank12">
@@ -328,24 +331,8 @@
         <a target="_blank" href="https://www.linkedin.com/in/joshuaahankins/">
           <i class="devicon-linkedin-plain"></i>
         </a>
-
-        <!-- <a target="_blank" href="https://github.com/jhank12">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            fill="currentColor"
-            class="bi bi-envelope-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-            />
-          </svg>
-        </a> -->
       </div>
     </footer>
-    <!-- </section> -->
 
     <script src="script.js"></script>
   </body>

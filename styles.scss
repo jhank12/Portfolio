@@ -20,7 +20,6 @@ section {
 }
 
 .fullWidthSection {
-  // background-color: green;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -33,25 +32,49 @@ section {
   margin: 0 auto;
   padding: 60px 0;
   max-width: 1000px;
-  // width: 70%;
 }
 
 .landing {
-  // background-color: lightblue;
   display: grid;
-  // grid-template-areas: 'header'
-  //                      'content';
+
   grid-template-rows: 70px 1fr;
   height: 100vh;
 }
 
 header {
   align-items: center;
-  // background-color: greenyellow;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
+  position: relative;
   width: 80%;
+
+  svg {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.sidebar {
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 20px;
+  width: 50%;
+  z-index: 1;
+  display: none;
+
+  nav {
+    margin-top: 40px;
+
+    ul {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  }
 }
 
 h1 {
@@ -77,9 +100,11 @@ h4 {
 a {
   text-decoration: none;
   color: #ebebeb;
+  cursor: pointer;
 }
 
-button, .btnsContainer a {
+button,
+.btnsContainer a {
   border-radius: 50px;
   color: #ebebeb;
   cursor: pointer;
@@ -89,12 +114,9 @@ button, .btnsContainer a {
   height: 50px;
 }
 
-// use variables for color
-
 .btnMain {
   background-color: #3b95e9;
   border: none;
-
 }
 
 .btnSecondary {
@@ -119,15 +141,10 @@ li:hover {
   color: #a8a8a8;
 }
 
-a {
-}
-
-
 .landingContent {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
   text-align: center;
   left: 50%;
@@ -136,21 +153,15 @@ a {
   transform: translate(-50%, -50%);
 
   button {
+    margin-top: 6px;
     width: 150px;
-
   }
-
 }
-
 
 .about {
   display: flex;
   flex-direction: column;
   gap: 70px;
-}
-
-.about p {
-  // width: 80%;
 }
 
 .text-normal {
@@ -167,7 +178,6 @@ a {
 }
 
 .skillGroups {
-  // background-color: lightblue;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -175,7 +185,6 @@ a {
 }
 
 .skillGroupContainer {
-  // background-color: lightcoral;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -216,22 +225,9 @@ i {
   font-size: 4.5rem;
 }
 
-// projects section
-
-// .projectsList {
-//    display: flex;
-//    flex-direction: column;
-//    gap: 30px;
-//    width: 100%;
-// }
-
 .projectsList {
   display: grid;
-  // grid-template-columns: 1fr;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-
-  // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
   gap: 25px;
 }
 
@@ -240,11 +236,11 @@ i {
 }
 
 #shoppingCartImgContainer {
-  background-image: url("images/shopping-cart.PNG");
+  background-image: url("images/shopping-cart.png");
 }
 
 #tipCalculatorImgContainer {
-  background-image: url("images/tip_calculator.PNG");
+  background-image: url("images/tip_calculator.png");
 }
 
 #pixelArtImgContainer {
@@ -267,7 +263,6 @@ i {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
-  // height: 275px;
 }
 
 .projectInfo {
@@ -295,25 +290,17 @@ i {
 .btnsContainer {
   display: flex;
   gap: 15px;
-  height: 52px;
 
   a {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    height: 100%
   }
-
-  // button {
-  //   flex: 1;
-  //   height: 100%;
-  // }
 }
 
 footer {
   background-color: #272727;
-  // max-width: 1100px;
   display: flex;
   align-items: center;
   height: 175px;
@@ -344,21 +331,7 @@ footer {
   gap: 30px;
   justify-content: center;
   max-width: 1100px;
-
   margin: 0 auto;
-  // width: 70%;
-}
-
-.contentSection {
-  // background-color: blue;
-  // margin: 30px 50px 30px 50px ;
-  // width: 80%;
-}
-
-@media (max-width: 1300px) {
-  // .contentSection {
-  //    width: 75%;
-  // }
 }
 
 @media (max-width: 1200px) {
@@ -368,19 +341,9 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .projectsList {
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
   .projectCard {
     flex-direction: column;
-    // gap: 20px;
   }
-
-  // .projectCard .projectImg {
-  //   flex: 300px;
-  // }
 }
 
 @media (max-width: 1024px) {
@@ -389,9 +352,39 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  header {
+    padding: 0 15px;
+    width: 100%;
+
+    .regularNav {
+      display: none;
+    }
+
+    svg {
+      display: flex;
+    }
+  }
+
+  .landingContent {
+    width: 95%;
+  }
+
+  .contentSection {
+    padding: 35px 0;
+  }
+}
+
 @media (max-width: 410px) {
   .projectsList {
     grid-template-columns: 1fr;
   }
 
+  .btnsContainer {
+    flex-direction: column;
+
+    a {
+      flex: none;
+    }
+  }
 }
