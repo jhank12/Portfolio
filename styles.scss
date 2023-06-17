@@ -19,12 +19,6 @@ section {
   position: relative;
 }
 
-.fullWidthSection {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .contentSection {
   display: flex;
   flex-direction: column;
@@ -48,6 +42,11 @@ header {
   margin: 0 auto;
   position: relative;
   width: 80%;
+  max-width: 1900px;
+
+  a:hover {
+    color: #aaaaaa;
+  }
 
   svg {
     display: none;
@@ -105,6 +104,7 @@ a {
 
 button,
 .btnsContainer a {
+  background-color: #3b95e9;
   border-radius: 50px;
   color: #ebebeb;
   cursor: pointer;
@@ -114,9 +114,19 @@ button,
   height: 50px;
 }
 
+button:hover,
+.btnsContainer a:hover {
+  background-color: #258ef0;
+
+}
+
 .btnMain {
   background-color: #3b95e9;
   border: none;
+}
+
+.btnMain:hover {
+  background-color: #258ef0;
 }
 
 .btnSecondary {
@@ -231,22 +241,6 @@ i {
   gap: 25px;
 }
 
-#calendarImgContainer {
-  background-image: url("images/calendar.PNG");
-}
-
-#shoppingCartImgContainer {
-  background-image: url("images/shopping-cart.png");
-}
-
-#tipCalculatorImgContainer {
-  background-image: url("images/tip_calculator.png");
-}
-
-#pixelArtImgContainer {
-  background-image: url("images/pixel-art.PNG");
-}
-
 .projectCard {
   background-color: #272727;
   border-radius: 10px;
@@ -265,6 +259,22 @@ i {
   border-radius: 8px;
 }
 
+#calendarImgContainer {
+  background-image: url("images/calendar.PNG");
+}
+
+#shoppingCartImgContainer {
+  background-image: url("images/shopping-cart.png");
+}
+
+#tipCalculatorImgContainer {
+  background-image: url("images/tip_calculator.png");
+}
+
+#pixelArtImgContainer {
+  background-image: url("images/pixel-art.PNG");
+}
+
 .projectInfo {
   display: flex;
   flex-direction: column;
@@ -276,9 +286,13 @@ i {
 
 .projectDescription {
   display: flex;
-  gap: 15px;
+  gap:4px;
   flex-direction: column;
   width: 95%;
+
+  h4 {
+    font-weight: 500;
+  }
 }
 
 .cardBottom {
@@ -376,6 +390,11 @@ footer {
 }
 
 @media (max-width: 410px) {
+
+  .techIconsContainer {
+    justify-content: space-between;
+  }
+
   .projectsList {
     grid-template-columns: 1fr;
   }
@@ -387,4 +406,5 @@ footer {
       flex: none;
     }
   }
+
 }
